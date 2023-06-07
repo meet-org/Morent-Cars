@@ -1,0 +1,41 @@
+:root {
+   --color-primary: #3563e9;
+   --color-red: #ed3f3f;
+   --color-orange: #fbad39;
+   --color-white: #fff;
+   --color-dark-900: #1a202c;
+   --color-dark-700: #717171;
+   --color-dark-500: #596780;
+   --color-dark-300: #90a3bf;
+   --background-primary: #ffffff;
+   --background-secondary: #f6f7f9;
+   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+   --box-shadow1: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark {
+   --background-primary: #262626;
+   --background-secondary: #282828;
+}
+
+/* css reset */
+* {
+   margin: 0;
+   padding: 0;
+   direction: ltr;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   // font-family: yekan;
+}
+
+body {
+   overflow-x: hidden;
+   background-color: var(--background-primary);
+}
+
+@mixin d-flex($justify: flex-start, $align: flex-start) {
+   display: flex;
+   justify-content: $justify;
+   align-items: $align;
+}
