@@ -1,0 +1,58 @@
+@import '../../index.scss';
+nav{
+    padding: 1.5rem;
+    .profile-box{
+        @include  d-flex(space-between,center);
+        .fa{
+            color: var(--color-dark-300);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        img{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .logo-box{ 
+        .logo{
+            color: var(--color-primary);
+            margin : {
+                top: .5rem;
+                bottom: 1.2rem;
+            }
+        }
+    }
+    .serch-filter{
+        @include  d-flex(space-between,center);
+        .search-box{
+            border: 1px solid var(--color-dark-300);
+            border-radius: .5rem;
+            @include  d-flex(flex-start,center);
+            padding: .5rem;
+            width: 80%;
+            .icon{
+                width: 2rem;
+                cursor: pointer;
+            }
+            input{
+                border: none;
+                color: var(--color-dark-300);
+                padding: .5rem;
+                font-size: 1rem;
+            }
+        }
+        .filter-icon{
+            border: 1px solid var(--color-dark-300);
+            border-radius: .5rem;
+            padding: .5rem;
+            .icon{
+                width: 2rem;
+                cursor: pointer;
+                color: var(--color-dark-300);
+            }
+        }
+    }
+    
+}

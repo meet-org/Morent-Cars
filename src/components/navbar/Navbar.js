@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
+import './navbar.scss';
 
 class Navbar extends Component {
     state = {  } 
     render() { 
         return (
             <>
-                <h1>navbar is ready to coding</h1>
+                <nav>
+                    <div className="profile-box">
+                        <i className='fa fa-bars'></i>
+                        <img src="./images/profile.jpg" alt="profile" />
+                    </div>
+                    <div className="logo-box">
+                        <h1 className='logo'>MORENT</h1>
+                    </div>
+                    <div className="serch-filter">
+                        <div className="search-box">
+                            <img className='icon' src="./images/icons/search-normal.svg" alt="" />
+                            <input type="search" placeholder='Search something here' name="" id="" />
+                        </div>
+                        <span className='filter-icon'><img className='icon' src="./images/icons/filter.svg" alt="" /></span>
+                    </div>
+                </nav>
             </>
         );
     }
