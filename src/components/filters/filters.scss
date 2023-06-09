@@ -1,0 +1,25 @@
+.filters {
+   padding-bottom: 20px;
+
+   /* .title {
+      text-transform: uppercase;
+      color: var(--color-dark-300);
+      margin-bottom: 20px;
+   } */
+   
+   .filter {
+      margin-bottom: 10px;
+      input {
+         width: 17px;
+         height: 17px;
+         margin-right: 5px;
+         accent-color: var(--color-primary);
+      }
+      
+      label {
+         span {
+            color: var(--color-dark-300);
+         }
+      }
+   }
+}
