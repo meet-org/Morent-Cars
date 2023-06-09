@@ -1,4 +1,5 @@
 @import '../../index.scss';
+
 nav{
     // padding: 1.5rem;
     .profile-box{
@@ -8,16 +9,20 @@ nav{
             font-size: 1.8rem;
             cursor: pointer;
         }
-        img{
+        .profile-img{
             width: 3rem;
             height: 3rem;
             border-radius: 50%;
             object-fit: cover;
         }
+        .profile-details{
+            display: none;
+        }
     }
     .logo-box{ 
         .logo{
             color: var(--color-primary);
+            font-size: 2rem;
             margin : {
                 top: .5rem;
                 bottom: 1.2rem;
@@ -33,7 +38,7 @@ nav{
             padding: .5rem;
             width: 80%;
             .icon{
-                width: 2rem;
+                width: 1.8rem;
                 cursor: pointer;
             }
             input{
@@ -48,11 +53,65 @@ nav{
             border-radius: .5rem;
             padding: .5rem;
             .icon{
-                width: 2rem;
+                width: 1.8rem;
                 cursor: pointer;
                 color: var(--color-dark-300);
             }
         }
     }
     
+}
+
+@media only screen and (min-width: 576px) {
+   nav{
+    .profile-box{
+        @include d-flex(flex-end,center);
+        gap: 2rem;
+        .fa-bars{
+            display: none;
+        }
+        .profile-details{
+            display: inline-block;
+        }
+    }
+    .logo-box{
+        display: inline-block;
+    }
+    
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   nav{
+    @include d-flex(space-between,center);
+    .profile-box{
+        order: 1;
+        @include d-flex(flex-end,center);
+        gap: 2rem;
+        .fa-bars{
+            display: none;
+        }
+    }
+    .serch-filter{
+        border: 1px solid var(--color-dark-300);
+        border-radius: 1.5rem;
+        width: 40%;
+        .search-box{
+            border: none;
+        }
+        .filter-icon{
+            border: none;
+        }
+    }
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   .serch-filter{
+    margin-left: -10rem;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   
 }
