@@ -2,12 +2,14 @@
 
 nav{
     // padding: 1.5rem;
+    margin-bottom: 1rem;
     .profile-box{
         @include  d-flex(space-between,center);
         .fa{
             color: var(--color-dark-300);
             font-size: 1.8rem;
             cursor: pointer;
+            z-index: 99;
         }
         .profile-img{
             width: 3rem;
@@ -67,11 +69,11 @@ nav{
     .profile-box{
         @include d-flex(flex-end,center);
         gap: 2rem;
-        .fa-bars{
-            display: none;
-        }
         .profile-details{
             display: inline-block;
+        }
+        .fa{
+            margin-right: auto;
         }
     }
     .logo-box{
@@ -88,7 +90,7 @@ nav{
         order: 1;
         @include d-flex(flex-end,center);
         gap: 2rem;
-        .fa-bars{
+        .fa{
             display: none;
         }
     }

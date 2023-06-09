@@ -43,16 +43,16 @@ class Header extends Component {
                   <img src="./images/inside-car-2.png" alt="" />
                </div>
             </div>
-            <div class="right">
-               <div class="top">
-                  <div class="right-title">
+            <div className="right">
+               <div className="top">
+                  <div className="right-title">
                      <h2>Nissan GT-R</h2>
-                     <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                     <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="far fa-star"></i>
                      </div>
                   </div>
                   <svg
@@ -75,24 +75,24 @@ class Header extends Component {
                   consequuntur incidunt provident optio magni.
                </p>
 
-               <div class="details">
-                  <span class="detail">TypeCar</span>
-                  <span class="detail">Sport</span>
-                  <span class="detail">Capacity</span>
-                  <span class="detail">2Person</span>
-                  <span class="detail">Steering</span>
-                  <span class="detail">Manual</span>
-                  <span class="detail">Gasoline</span>
-                  <span class="detail">7OL</span>
+               <div className="details">
+                  <span className="detail">TypeCar</span>
+                  <span className="detail">Sport</span>
+                  <span className="detail">Capacity</span>
+                  <span className="detail">2Person</span>
+                  <span className="detail">Steering</span>
+                  <span className="detail">Manual</span>
+                  <span className="detail">Gasoline</span>
+                  <span className="detail">7OL</span>
                </div>
 
-               <div class="bm">
-                  <div class="lt">
+               <div className="bm">
+                  <div className="lt">
                      <h2>$80.00 / </h2>days
                      <br />
                      <del>$100</del>
                   </div>
-                  <div class="rt">
+                  <div className="rt">
                      <a href="#">Rent Now</a>
                   </div>
                </div>

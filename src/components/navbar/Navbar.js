@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import './navbar.scss';
 
 class Navbar extends Component {
-    state = {  } 
+    constructor(props) {
+        super(props);
+     }
+
     render() { 
         return (
             <>
                 <nav>
                     <div className="profile-box">
-                        <i className='fa fa-bars'></i>
+                    {this.props.active ? (<i className='fa fa-close' onClick={this.props.activeSidebarHandler}></i>) : (<i className='fa fa-bars' onClick={this.props.activeSidebarHandler}></i>)}
                         <img className='profile-details' src="./images/icons/notification-bing.svg" alt="" />
                         <img className='profile-details' src="./images/icons/like.svg" alt="" />
                         <img className='profile-details' src="./images/icons/setting.svg" alt="" />
