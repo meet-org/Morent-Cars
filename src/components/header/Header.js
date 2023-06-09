@@ -76,7 +76,7 @@ class Header extends Component {
                </p>
 
                <div class="details">
-                  <span class="detail">Type Car</span>
+                  <span class="detail">TypeCar</span>
                   <span class="detail">Sport</span>
                   <span class="detail">Capacity</span>
                   <span class="detail">2Person</span>

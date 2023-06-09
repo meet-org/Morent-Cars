@@ -1,7 +1,11 @@
 aside {
-   height: 100vh;
-   grid-column: span 1;
-   padding: 30px;
+   background-color: var(--background-primary);
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   padding: 50px;
+   // display: none;
 
    .title {
       text-transform: uppercase;
@@ -19,4 +23,24 @@ aside {
       width: 100%;
       margin-bottom: 10px;
    }
+}
+
+@media only screen and (min-width: 576px) {
+   
+}
+
+@media only screen and (min-width: 768px) {
+   
+}
+
+@media only screen and (min-width: 992px) {
+   aside {
+      position: relative;
+      grid-column: span 1;
+      padding: 30px;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   
 }
