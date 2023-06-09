@@ -1,11 +1,11 @@
 .filters {
    padding-bottom: 20px;
 
-   .title {
+   /* .title {
       text-transform: uppercase;
       color: var(--color-dark-300);
       margin-bottom: 20px;
-   }
+   } */
    
    .filter {
       margin-bottom: 10px;
@@ -17,12 +17,8 @@
       }
       
       label {
-         font-size: 1.25rem;
-         font-weight: 700;
-         color: var(--color-dark-500);
          span {
             color: var(--color-dark-300);
-
          }
       }
    }

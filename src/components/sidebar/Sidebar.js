@@ -35,7 +35,6 @@ class Sidebar extends Component {
                      id="price"
                      min={0}
                      max={100}
-                     // value={60}
                   />
                   <label htmlFor="price">Max.$100.00</label>
                </div>
