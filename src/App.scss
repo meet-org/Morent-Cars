@@ -5,4 +5,7 @@
 
 main {
    grid-column: span 1;
+   background-color: var(--background-secondary);
+   height: 100vh;
+   padding: 30px;
 }
