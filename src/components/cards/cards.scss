@@ -1,0 +1,22 @@
+.cards-section {
+   margin-bottom: 50px;
+   overflow: hidden;
+   .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      .title {
+         color: var(--color-dark-300);
+      }
+      a {
+         color: var(--color-primary);
+         font-weight: bold;
+      }
+   }
+
+   .cards-container {
+      display: flex;
+      gap: 40px;
+   }
+}

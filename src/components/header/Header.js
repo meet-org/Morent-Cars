@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./header.scss";
 import Stars from "../stars/Stars";
+import Rent from "../rent/Rent";
 
 class Header extends Component {
    constructor(props) {
@@ -84,16 +85,7 @@ class Header extends Component {
                   <span className="detail">7OL</span>
                </div>
 
-               <div className="bm">
-                  <div className="lt">
-                     <h2>$80.00 / </h2>days
-                     <br />
-                     <del>$100</del>
-                  </div>
-                  <div className="rt">
-                     <a href="#">Rent Now</a>
-                  </div>
-               </div>
+               <Rent price={80} discount={100} />
             </div>
          </header>
       );

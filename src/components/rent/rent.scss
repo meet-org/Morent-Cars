@@ -1,0 +1,27 @@
+.rent-details {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .lt {
+      color: var(--color-dark-300);
+      h2 {
+         display: inline-block;
+         color: var(--color-dark-900);
+      }
+      del {
+         text-decoration: line-through;
+      }
+   }
+   .rt {
+      a {
+         background-color: var(--color-primary);
+         padding: 1rem;
+         width: 150px;
+         text-align: center;
+         border-radius: 5px;
+         color: var(--color-white);
+      }
+   }
+}
