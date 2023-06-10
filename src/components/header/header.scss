@@ -76,10 +76,13 @@ header {
                font-size: 2rem;
                margin-bottom: 0.5rem;
             }
-            .stars {
-               i {
-                  color: #fbad39;
-               }
+
+            .review {
+               color: var(--color-dark-500);
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 5px;
             }
          }
 
@@ -148,7 +151,6 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  
 }
 
 @media only screen and (min-width: 992px) {

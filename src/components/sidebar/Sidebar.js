@@ -4,7 +4,6 @@ import Filters from "../filters/Filters";
 
 class Sidebar extends Component {
    render() {
-      console.log(this.props.active);
       return (
          <>
             {this.props.active ? (

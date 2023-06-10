@@ -44,10 +44,14 @@ nav{
                 cursor: pointer;
             }
             input{
+                width: 100%;
                 border: none;
                 color: var(--color-dark-300);
                 padding: .5rem;
                 font-size: 1rem;
+                &:focus {
+                    outline: none;
+                }
             }
         }
         .filter-icon{
