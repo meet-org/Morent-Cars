@@ -70,8 +70,10 @@ nav{
         .fa-bars{
             display: none;
         }
-        .profile-details{
+        span{
+          .profile-details{
             display: inline-block;
+        }
         }
     }
     .logo-box{
@@ -92,16 +94,30 @@ nav{
             display: none;
         }
     }
-    .serch-filter{
+    span {
+      .profile-details {
+        display: inline-block;
         border: 1px solid var(--color-dark-300);
-        border-radius: 1.5rem;
-        width: 40%;
-        .search-box{
-            border: none;
-        }
-        .filter-icon{
-            border: none;
-        }
+        border-radius: 50%;
+        padding: 0.5rem;
+      }
+    }
+    span.notif {
+      &::after {
+        content: "";
+        width: 0.7rem;
+        height: 0.7rem;
+        border-radius: 50%;
+        background-color: var(--color-red);
+        display: inline-block;
+        position: relative;
+        top: -30px;
+        right: 15px;
+      }
+
+      .fa {
+        margin-right: auto;
+      }
     }
    }
 }

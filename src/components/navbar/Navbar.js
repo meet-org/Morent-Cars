@@ -9,9 +9,9 @@ class Navbar extends Component {
                 <nav>
                     <div className="profile-box">
                         <i className='fa fa-bars'></i>
-                        <img className='profile-details' src="./images/icons/notification-bing.svg" alt="" />
-                        <img className='profile-details' src="./images/icons/like.svg" alt="" />
-                        <img className='profile-details' src="./images/icons/setting.svg" alt="" />
+                        <span className='notif'><img className='profile-details' src="./images/icons/notification-bing.svg" alt="" /></span>
+                        <span><img className='profile-details' src="./images/icons/like.svg" alt="" /></span>
+                        <span><img className='profile-details' src="./images/icons/setting.svg" alt="" /></span>
                         <img className='profile-img' src="./images/profile.jpg" alt="profile" />
                     </div>
                     <div className="logo-box">
