@@ -14,8 +14,13 @@
 }
 
 .dark {
-   --background-primary: #262626;
-   --background-secondary: #282828;
+   --background-primary: #0a1224;
+   --color-white: #0a1224;
+   --background-secondary: #1a202c;
+   --color-dark-900: #ffffff;
+   --color-dark-300: #a7b4c8;
+   --color-dark-500: #fafafa;
+
 }
 
 /* css reset */
@@ -29,6 +34,10 @@
    // font-family: yekan;
 }
 
+html {
+   font-size: 10px;
+}
+
 body {
    overflow-x: hidden;
    background-color: var(--background-primary);
@@ -38,4 +47,28 @@ body {
    display: flex;
    justify-content: $justify;
    align-items: $align;
+}
+
+@media only screen and (min-width: 576px) {
+   html {
+   font-size: 12px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+   html {
+   font-size: 14px;
+}
+}
+
+@media only screen and (min-width: 992px) {
+   html {
+      font-size: 16px;
+   }
+}
+
+@media only screen and (min-width: 1200px) {
+   html {
+      font-size: 18px;
+   }
 }

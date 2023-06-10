@@ -1,0 +1,55 @@
+.comments {
+   background-color: var(--color-white);
+   border-radius: 10px;
+   padding: 20px;
+   transition: all 0.5s;
+   margin-bottom: 50px;
+   /* overflow: hidden;
+   max-height: 300px; */
+
+   h2 {
+      margin-bottom: 20px;
+      color: var(--color-dark-900);
+      span {
+         background-color: var(--color-primary);
+         color: white;
+         font-size: 1rem;
+         border-radius: 5px;
+         margin-left: 10px;
+         padding: 5px 15px;
+         line-height: 30px;
+      }
+   }
+
+   #show {
+      color: var(--color-dark-300);
+      cursor: pointer;
+      text-align: center;
+      i {
+         font-size: 20px;
+         font-weight: light;
+         margin-left: 10px;
+      }
+   }
+}
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 768px) {
+   .profile {
+      img {
+         grid-column: span 1;
+      }
+
+      .informations {
+         grid-column: span 11;
+      }
+   }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
