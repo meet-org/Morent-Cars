@@ -5,7 +5,7 @@ class Darkmode extends Component {
    constructor(props) {
       super(props);
       this.state = {
-         theme: "light",
+         theme: localStorage.getItem("theme"),
       };
    }
 
@@ -19,15 +19,10 @@ class Darkmode extends Component {
       }
    };
 
-   setThemeInLocalStorage = () => {
-      let localStorageTheme = localStorage.getItem("theme");
-
-      if (localStorageTheme === "dark") {
+   render() {
+      if (this.state.theme === "dark") {
          document.body.classList.add("dark");
       }
-   };
-
-   render() {
       return (
          <div className="switch" onClick={this.darkModeToggler}>
             <div className="flicker"></div>

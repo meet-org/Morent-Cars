@@ -29,6 +29,7 @@ footer{
                 bottom: 2rem;
             };
             .title{
+                color: var(--color-dark-900);
                 text-transform: capitalize;
                 margin-bottom: 1rem;
             }
@@ -45,9 +46,13 @@ footer{
         color: var(--color-dark-300);
     }
     .copy-section{
+        color: var(--color-dark-900);
         .policy-section{
             @include d-flex(space-between, center);
             padding: 1rem .2rem;
+        }
+        h6 {
+            text-align: center;
         }
     }
 }
