@@ -15,7 +15,7 @@ class Card extends Component {
    };
 
    render() {
-      const { name, cs, img, gasLimit, space, price, discount } = this.props;
+      const { name, cs, img, gasLimit, space, price, discount } = this.props.car;
       return (
          <>
             <div className="card">

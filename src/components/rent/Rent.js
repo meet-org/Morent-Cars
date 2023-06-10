@@ -10,8 +10,7 @@ class Rent extends Component {
                <div className="lt">
                   <h2>${price}.00 / </h2>days
                   <br />
-                  {discount ? <del>$100</del> : undefined}
-                  <del>$100</del>
+                  {discount ? <del>${discount}</del> : undefined}
                </div>
                <div className="rt">
                   <a href="#">Rent Now</a>

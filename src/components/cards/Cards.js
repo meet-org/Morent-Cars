@@ -58,6 +58,7 @@ class Cards extends Component {
                gasLimit: "90L",
                space: "6People",
                price: 74,
+               discount: 90,
             },
          ],
       };
@@ -76,28 +77,12 @@ class Cards extends Component {
                   {title.includes("Recent")
                      ? this.state.recent.map((car, index) => {
                           return (
-                             <Card
-                                name={car.name}
-                                cs={car.cs}
-                                img={car.img}
-                                gasLimit={car.gasLimit}
-                                space={car.space}
-                                price={car.price}
-                                key={index}
-                             />
+                             <Card car={car} key={index}/>
                           );
                        })
                      : this.state.recommendation.map((car, index) => {
                           return (
-                             <Card
-                                name={car.name}
-                                cs={car.cs}
-                                img={car.img}
-                                gasLimit={car.gasLimit}
-                                space={car.space}
-                                price={car.price}
-                                key={index}
-                             />
+                             <Card car={car} key={index}/>
                           );
                        })}
                </div>
