@@ -1,0 +1,35 @@
+/* darkmode switch starts */
+.switch {
+   width: 80px;
+   height: 40px;
+   border-radius: 20px;
+   background-color: var(--color-dark-900);
+   position: relative;
+   margin: auto;
+   .flicker {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: var(--background-primary);
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      transition: 0.3s;
+      box-shadow: inset 4px 4px 4px var(--background-primary);
+   }
+
+   .moon {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+      position: absolute;
+      top: 5px;
+      left: 45px;
+   }
+   /* darkmode switch ends */
+}
+
+.dark .flicker {
+   transform: translateX(40px);
+}
