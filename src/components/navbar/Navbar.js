@@ -12,10 +12,10 @@ class Navbar extends Component {
                 <nav>
                     <div className="profile-box">
                     {this.props.active ? (<i className='fa fa-close' onClick={this.props.activeSidebarHandler}></i>) : (<i className='fa fa-bars' onClick={this.props.activeSidebarHandler}></i>)}
-                        <img className='profile-details' src="./images/icons/notification-bing.svg" alt="" />
-                        <img className='profile-details' src="./images/icons/like.svg" alt="" />
-                        <img className='profile-details' src="./images/icons/setting.svg" alt="" />
-                        <img className='profile-img' src="./images/profile.jpg" alt="profile" />
+                        <span className='active'><img className='profile-details' src="./images/icons/notification-bing.svg" alt="" /></span>
+                        <span><img className='profile-details' src="./images/icons/like.svg" alt="" /></span>
+                        <span><img className='profile-details' src="./images/icons/setting.svg" alt="" /></span>
+                        <span><img className='profile-img' src="./images/profile.jpg" alt="profile" /></span>
                     </div>
                     <div className="logo-box">
                         <h1 className='logo'>MORENT</h1>
