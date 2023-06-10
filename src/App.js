@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
 import Comments from "./components/comments/Comments";
+import Cards from "./components/cards/Cards";
 
 class App extends Component {
    constructor(props) {
@@ -28,6 +29,8 @@ class App extends Component {
                <main>
                   <Header />
                   <Comments/>
+                  <Cards title="Recent Car"/>
+                  <Cards title="Recommendation Car"/>
                </main>
             </section>
             <Footer></Footer>

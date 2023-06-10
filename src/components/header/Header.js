@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./header.scss";
 import Stars from "../stars/Stars";
+import Rent from "../rent/Rent";
 
 class Header extends Component {
    constructor(props) {
@@ -24,6 +25,10 @@ class Header extends Component {
             <div className="left">
                <div className="picture picture_1">
                   <img src={this.state.src} alt="" />
+                  {/* <div className="text">
+                     <h2>Sports car with the Best design and acceleration</h2>
+                     <p>Safety and comfort while driving a futuristic and elegant sports car</p>
+                  </div> */}
                </div>
                <div
                   className="picture picture_2 active"
@@ -84,16 +89,7 @@ class Header extends Component {
                   <span className="detail">7OL</span>
                </div>
 
-               <div className="bm">
-                  <div className="lt">
-                     <h2>$80.00 / </h2>days
-                     <br />
-                     <del>$100</del>
-                  </div>
-                  <div className="rt">
-                     <a href="#">Rent Now</a>
-                  </div>
-               </div>
+               <Rent price={80} discount={100} />
             </div>
          </header>
       );

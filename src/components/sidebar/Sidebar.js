@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./sidebar.scss";
 import Filters from "../filters/Filters";
+import Darkmode from "../darkmode/Darkmode";
 
 class Sidebar extends Component {
    render() {
@@ -39,6 +40,8 @@ class Sidebar extends Component {
                      />
                      <label htmlFor="price">Max.$100.00</label>
                   </div>
+                  <br /><br />
+                  <Darkmode/>
                </aside>
             ) : undefined}
          </>
