@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
 import Header from "./components/header/Header";
+import Comments from "./components/comments/Comments";
 
 class App extends Component {
    constructor(props) {
@@ -26,6 +27,7 @@ class App extends Component {
                <Sidebar active={this.state.activeSidebar || this.state.width}/>
                <main>
                   <Header />
+                  <Comments/>
                </main>
             </section>
             <Footer></Footer>

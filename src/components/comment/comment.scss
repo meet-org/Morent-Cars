@@ -1,0 +1,43 @@
+.comment-container {
+   display: grid;
+   grid-template-columns: 70px 1fr;
+   row-gap: 10px;
+   color: var(--color-dark-300);
+   .profile {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      img {
+         grid-column: span 1;
+         width: 50px;
+         height: 50px;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+
+      .informations {
+         grid-column: span 1;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         .information {
+            .name {
+               color: var(--color-dark-900);
+               margin-bottom: 5px;
+               font-size: 1.5rem;
+            }
+            .job {
+            }
+         }
+         .details {
+            .date {
+            }
+         }
+      }
+   }
+
+   .comment {
+      grid-column: 2/-1;
+      margin-bottom: 20px;
+   }
+}

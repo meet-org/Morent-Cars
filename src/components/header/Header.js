@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./header.scss";
+import Stars from "../stars/Stars";
 
 class Header extends Component {
    constructor(props) {
@@ -47,12 +48,9 @@ class Header extends Component {
                <div className="top">
                   <div className="right-title">
                      <h2>Nissan GT-R</h2>
-                     <div className="stars">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="far fa-star"></i>
+                     <div className="review">
+                        <Stars stars={4} />
+                        440+Reviewers
                      </div>
                   </div>
                   <svg
