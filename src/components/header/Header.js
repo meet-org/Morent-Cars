@@ -25,6 +25,10 @@ class Header extends Component {
             <div className="left">
                <div className="picture picture_1">
                   <img src={this.state.src} alt="" />
+                  {/* <div className="text">
+                     <h2>Sports car with the Best design and acceleration</h2>
+                     <p>Safety and comfort while driving a futuristic and elegant sports car</p>
+                  </div> */}
                </div>
                <div
                   className="picture picture_2 active"
